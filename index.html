@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroSport | Tienda Deportiva de Alto Rendimiento</title>
+    <meta name="description"
+        content="AeroSport es tu tienda de deportes de alto rendimiento de confianza. Compra calzado, ropa y accesorios deportivos con la máxima seguridad y privacidad.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo" id="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                <span>AERO<span>SPORT</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active" data-target="home">Inicio</a>
+                <a href="#catalogo" class="nav-link" data-target="productos">Productos</a>
+                <a href="#" class="nav-link" id="btn-justificacion-nav">Justificación</a>
+                <a href="#" class="nav-link" id="btn-privacidad-nav">Privacidad</a>
+                <a href="#" class="nav-link" id="btn-cookies-nav">Cookies</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar productos...">
+                    <button class="search-btn" aria-label="Buscar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="cart-toggle" id="cart-toggle-btn" aria-label="Ver Carrito">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">Colección Elite 2026</span>
+            <h1 class="hero-title">EQUÍPATE PARA EL <span class="text-gradient">RENDIMIENTO</span> SIN LÍMITES</h1>
+            <p class="hero-description">Explora nuestra colección premium de calzado y accesorios diseñados con
+                tecnología biomecánica avanzada y materiales sostenibles.</p>
+            <div class="hero-cta">
+                <a href="#catalogo" class="btn btn-primary">
+                    Comprar Ahora
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#" class="btn btn-secondary" id="btn-justificacion-hero">Ver Justificación Técnica</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-circle"></div>
+            <!-- Dynamic interactive neon shoes showcase background image -->
+            <img src="assets/hero_shoes.png" alt="Running Shoes Elite" class="hero-image"
+                onerror="this.src='https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80'">
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3>Envío Express Gratis</h3>
+                    <p>En pedidos superiores a $99. Entrega en 24/48 horas con seguimiento en vivo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Transacción Encriptada</h3>
+                    <p>Certificación SSL de 256 bits y cumplimiento PCI-DSS para proteger tus datos de pago.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Datos Confidenciales</h3>
+                    <p>Respetamos al 100% tu privacidad. Cumplimos rigurosamente con RGPD y LFPDPPP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG SECTION -->
+    <section class="catalog-section" id="catalogo">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="sub-title">Nuestro Catálogo</span>
+                    <h2 class="section-title">Equipamiento de Vanguardia</h2>
+                </div>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="calzado">Calzado</button>
+                    <button class="filter-btn" data-category="ropa">Ropa</button>
+                    <button class="filter-btn" data-category="equipamiento">Equipamiento</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products loaded dynamically by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART DRAWER (SIDEBAR) -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Tu Carrito</h3>
+            <button class="cart-close-btn" id="cart-close-btn" aria-label="Cerrar Carrito">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="cart-drawer-body" id="cart-items-container">
+            <!-- Dynamic Cart Items -->
+            <div class="cart-empty-message" id="cart-empty-message">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="empty-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <p>Tu carrito está vacío</p>
+                <a href="#catalogo" class="btn btn-primary btn-sm" id="cart-back-to-shop">Explorar Tienda</a>
+            </div>
+        </div>
+
+        <div class="cart-drawer-footer" id="cart-drawer-footer">
+            <div class="cart-summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="cart-summary-row">
+                <span>Envío:</span>
+                <span id="cart-shipping">Gratis</span>
+            </div>
+            <div class="cart-summary-row total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <div class="secure-badge-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lock-icon">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Transacción segura SSL de 256 bits</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-container modal-lg">
+            <button class="modal-close" id="product-modal-close" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="product-detail-grid" id="product-detail-content">
+                <!-- Loaded dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PRIVACY POLICY MODAL -->
+    <div class="modal-overlay" id="privacy-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Política de Privacidad y Confidencialidad</h2>
+                <button class="modal-close" id="privacy-modal-close" aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body scrollable">
+                <h3>1. Compromiso de AeroSport con la Privacidad</h3>
+                <p>En AeroSport, la seguridad y confidencialidad de los datos personales de nuestros clientes es una
+                    prioridad absoluta. Esta política describe qué datos recopilamos, cómo los protegemos y el uso
+                    estricto que se les da de acuerdo con el Reglamento General de Protección de Datos (RGPD) y la Ley
+                    Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP).</p>
+
+                <h3>2. Información que Recopilamos</h3>
+                <p>Para procesar pedidos y mejorar la experiencia de compra, recopilamos:</p>
+                <ul>
+                    <li><strong>Datos de contacto:</strong> Nombre completo, correo electrónico y número de teléfono.
+                    </li>
+                    <li><strong>Datos de envío:</strong> Dirección física de entrega y facturación.</li>
+                    <li><strong>Datos técnicos:</strong> Dirección IP, tipo de navegador e historial de interacción
+                        mediante cookies (sujeto a su consentimiento).</li>
+                </ul>
+                <p><em>Nota importante:</em> AeroSport <strong>NO almacena</strong> información financiera de tarjetas
+                    de crédito o débito. Todos los pagos son procesados directamente por pasarelas de pago cifradas con
+                    certificación PCI-DSS Nivel 1.</p>
+
+                <h3>3. Medidas de Seguridad y Encriptación</h3>
+                <p>Garantizamos la seguridad de la información mediante las siguientes medidas:</p>
+                <ul>
+                    <li><strong>Encriptación SSL/TLS:</strong> Toda la transferencia de datos entre el navegador del
+                        usuario y nuestros servidores viaja cifrada mediante protocolos seguros de capa de conexión
+                        (HTTPS).</li>
+                    <li><strong>Tokens de Pago:</strong> La información financiera se tokeniza de forma segura al
+                        enviarse al procesador de pagos, asegurando que ningún tercero (incluidos nosotros) tenga acceso
+                        a las credenciales bancarias.</li>
+                    <li><strong>Acceso Restringido:</strong> Solo personal debidamente autorizado de AeroSport tiene
+                        acceso a los datos de entrega de los clientes bajo estrictos acuerdos de confidencialidad.</li>
+                </ul>
+
+                <h3>4. Derechos del Usuario (ARCO)</h3>
+                <p>Usted tiene derecho a <strong>A</strong>cceder, <strong>R</strong>ectificar,
+                    <strong>C</strong>ancelar u <strong>O</strong>ponerse al uso de sus datos personales. Para ejercer
+                    estos derechos, puede enviar una solicitud a <code>privacidad@aerosport.com</code> aportando una
+                    prueba de identidad.</p>
+
+                <h3>5. Actualizaciones de esta Política</h3>
+                <p>Nos reservamos el derecho de modificar esta política en cualquier momento para adaptarla a novedades
+                    legislativas o jurisprudenciales. La versión vigente siempre estará accesible en este sitio web.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="privacy-modal-accept">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- COOKIE POLICY MODAL -->
+    <div class="modal-overlay" id="cookies-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Política de Cookies</h2>
+                <button class="modal-close" id="cookies-modal-close" aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body scrollable">
+                <h3>1. ¿Qué son las Cookies?</h3>
+                <p>Una cookie es un pequeño archivo de texto que un sitio web almacena en el navegador del usuario. Las
+                    cookies facilitan el uso y la navegación por una web y son esenciales para el funcionamiento de
+                    internet, aportando innumerables ventajas en la prestación de servicios interactivos.</p>
+
+                <h3>2. ¿Cómo utiliza AeroSport las Cookies?</h3>
+                <p>En AeroSport clasificamos las cookies utilizadas en tres categorías principales:</p>
+                <ul>
+                    <li><strong>Cookies Esenciales y Técnicas (Obligatorias):</strong> Permiten el correcto
+                        funcionamiento de la plataforma, como mantener activos los productos en el carrito de compras a
+                        lo largo de la sesión, recordar la sesión iniciada o asegurar la pasarela de pagos. No pueden
+                        ser desactivadas.</li>
+                    <li><strong>Cookies de Personalización y Rendimiento (Opcionales):</strong> Registran información
+                        sobre cómo interactúa el usuario con la página web (páginas visitadas, velocidad de carga) para
+                        optimizar el diseño y la velocidad de respuesta.</li>
+                    <li><strong>Cookies de Marketing y Análisis (Opcionales):</strong> Utilizadas para mostrar anuncios
+                        que sean relevantes y atractivos para el usuario individual, así como medir la efectividad de
+                        campañas publicitarias.</li>
+                </ul>
+
+                <h3>3. Control y Desactivación de Cookies</h3>
+                <p>Usted puede en cualquier momento gestionar sus preferencias de cookies a través del banner de
+                    configuración inicial o modificando los ajustes de su navegador web:</p>
+                <ul>
+                    <li><strong>Google Chrome:</strong> Configuración > Privacidad y seguridad > Cookies y otros datos
+                        de sitios.</li>
+                    <li><strong>Mozilla Firefox:</strong> Opciones > Privacidad & Seguridad > Cookies y datos del sitio.
+                    </li>
+                    <li><strong>Safari:</strong> Preferencias > Privacidad > Bloquear todas las cookies.</li>
+                </ul>
+                <p><em>Aviso:</em> Deshabilitar ciertas cookies técnicas puede causar un rendimiento deficiente del
+                    carrito de compras y de las pasarelas de pago securizadas.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cookies-modal-accept">Aceptar Preferencias</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECHNICAL JUSTIFICATION MODAL -->
+    <div class="modal-overlay" id="justificacion-modal">
+        <div class="modal-container modal-lg">
+            <div class="modal-header">
+                <h2>Justificación Técnica y de Ciberseguridad</h2>
+                <button class="modal-close" id="justificacion-modal-close" aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body scrollable">
+                <div class="justificacion-grid">
+                    <div class="justificacion-section">
+                        <h3>🔒 1. Diseño Enfocado en Ciberseguridad</h3>
+                        <p>En el contexto del comercio electrónico, la seguridad del usuario y el cumplimiento normativo
+                            son pilares fundamentales para mitigar riesgos de robo de identidad y fraude financiero:</p>
+                        <ul>
+                            <li><strong>Mitigación de OWASP Top 10:</strong> Este sitio ha sido estructurado siguiendo
+                                buenas prácticas de codificación. La carga dinámica de productos previene inyecciones
+                                XSS (Cross-Site Scripting) al sanitizar adecuadamente los datos insertados en el DOM.
+                            </li>
+                            <li><strong>Pasarela de Pago Tokenizada:</strong> Se simula un entorno seguro de checkout
+                                que valida la integridad de los datos de la tarjeta bancaria, utilizando validación
+                                regex del lado del cliente y cifrado asimétrico conceptual. La información sensible
+                                nunca toca el almacenamiento local (cookies o localStorage), reduciendo la superficie de
+                                ataque y el alcance de auditoría PCI-DSS.</li>
+                            <li><strong>Almacenamiento Local Seguro:</strong> El carrito de compras se almacena en
+                                `localStorage` únicamente persistiendo IDs y cantidades del catálogo público de la
+                                tienda, impidiendo que datos de carácter personal (PII) o financiero queden expuestos a
+                                ataques de manipulación local o secuestro de cookies (Session Hijacking).</li>
+                        </ul>
+                    </div>
+
+                    <div class="justificacion-section">
+                        <h3>📱 2. Justificación de Diseño y Usabilidad (UX/UI)</h3>
+                        <p>Una excelente experiencia visual y la velocidad de carga son clave para optimizar las tasas
+                            de conversión y la accesibilidad general:</p>
+                        <ul>
+                            <li><strong>Diseño Responsivo Fluido (Mobile-First):</strong> El layout ha sido diseñado con
+                                CSS Grid y Flexbox. Se adapta sin costuras desde pantallas móviles pequeñas hasta
+                                monitores ultra-wide, optimizando el tamaño del texto y los componentes táctiles.</li>
+                            <li><strong>Arquitectura SPA Ligera:</strong> Al utilizar JavaScript de vainilla, se
+                                minimiza la carga inicial de scripts y se evitan las penalizaciones de rendimiento
+                                asociadas a grandes frameworks. Las transiciones entre estados (abrir carrito, ver
+                                políticas, filtros) se gestionan en tiempo real de forma asíncrona y fluida.</li>
+                            <li><strong>Identidad Estética Deportiva Premium:</strong> Se emplea un modo oscuro de alto
+                                impacto visual con acentos en colores complementarios cyan y naranja fluorescente,
+                                evocando dinamismo, energía y tecnología moderna propia de atletas de alto rendimiento.
+                            </li>
+                            <li><strong>Accesibilidad (a11y):</strong> Elementos semánticos HTML5 correctos, etiquetas
+                                `aria-label` para lectores de pantalla en botones iconográficos, y altos contrastes de
+                                color para usuarios con visión limitada.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="justificacion-modal-accept">Entendido, Continuar Navegando</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL (SECURE PAYMENT SIMULATION) -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Pasarela de Pago Segura</h2>
+                <div class="ssl-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                    <span>Cifrado SSL 256 bits</span>
+                </div>
+            </div>
+
+            <!-- Pay Form -->
+            <form id="checkout-form" class="checkout-form">
+                <div class="modal-body scrollable">
+                    <div class="cart-total-badge">
+                        <span>Total a Pagar:</span>
+                        <strong id="checkout-total-price">$0.00</strong>
+                    </div>
+
+                    <!-- Step 1: Client Info -->
+                    <h3 class="form-section-title">1. Información de Envío</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkout-name">Nombre Completo *</label>
+                            <input type="text" id="checkout-name" required placeholder="Juan Pérez">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkout-email">Correo Electrónico *</label>
+                            <input type="email" id="checkout-email" required placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-phone">Teléfono *</label>
+                            <input type="tel" id="checkout-phone" required placeholder="55 1234 5678">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-address">Dirección de Entrega *</label>
+                        <input type="text" id="checkout-address" required
+                            placeholder="Calle, Número, Colonia, Delegación">
+                    </div>
+
+                    <!-- Step 2: Payment Details -->
+                    <h3 class="form-section-title">2. Detalles de Pago</h3>
+                    <div class="form-group">
+                        <label for="checkout-card-name">Nombre en la Tarjeta *</label>
+                        <input type="text" id="checkout-card-name" required placeholder="JUAN PEREZ">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-card-number">Número de Tarjeta *</label>
+                        <div class="card-number-wrapper">
+                            <input type="text" id="checkout-card-number" maxlength="19" required
+                                placeholder="4000 1234 5678 9010">
+                            <div class="card-brand-icon" id="card-brand-icon">
+                                <!-- Card brand logo generated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkout-expiry">Fecha de Vencimiento *</label>
+                            <input type="text" id="checkout-expiry" placeholder="MM/AA" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-cvv">CVV *</label>
+                            <input type="password" id="checkout-cvv" placeholder="•••" maxlength="4" required>
+                        </div>
+                    </div>
+
+                    <div class="privacy-consent-checkbox">
+                        <input type="checkbox" id="privacy-consent" required>
+                        <label for="privacy-consent">He leído y acepto la <a href="#"
+                                id="link-privacy-in-checkout">Política de Privacidad y Confidencialidad</a> de mis datos
+                            personales.</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="checkout-modal-cancel">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="btn-submit-pay">Confirmar Pago</button>
+                </div>
+            </form>
+
+            <!-- Loading Spinner (Hidden by default) -->
+            <div class="payment-processing" id="payment-processing" style="display: none;">
+                <div class="spinner"></div>
+                <h3>Procesando Pago Seguro...</h3>
+                <p>Por favor, no cierre esta ventana ni recargue la página. Estamos encriptando su información de pago.
+                </p>
+            </div>
+
+            <!-- Success State (Hidden by default) -->
+            <div class="payment-success" id="payment-success" style="display: none;">
+                <div class="success-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3>¡Pago Procesado Exitosamente!</h3>
+                <p>Muchas gracias por tu compra. Se ha enviado un correo electrónico de confirmación a tu dirección
+                    registrada con el número de pedido <strong>#AERO-834927</strong>.</p>
+                <p class="success-disclaimer">Tus datos personales e información de entrega han sido resguardados de
+                    forma confidencial.</p>
+                <button class="btn btn-primary" id="btn-success-close">Volver a la Tienda</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div class="cookie-consent-banner" id="cookie-consent-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>🍪 Configuración de Privacidad y Cookies</h3>
+                <p>Utilizamos cookies propias y de terceros para asegurar el correcto funcionamiento del carrito de
+                    compras, analizar la navegación y personalizar el contenido. Lee nuestra <a href="#"
+                        id="btn-cookies-banner">Política de Cookies</a> para más detalles.</p>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button class="btn btn-secondary btn-sm" id="btn-cookie-reject">Rechazar No Esenciales</button>
+                <button class="btn btn-primary btn-sm" id="btn-cookie-accept">Aceptar Todo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                        <span>AERO<span>SPORT</span></span>
+                    </a>
+                    <p>La tienda de equipamiento de alto rendimiento número uno. Combinamos ingeniería deportiva y
+                        ciberseguridad para garantizar compras rápidas y seguras.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h3>Colección</h3>
+                    <ul>
+                        <li><a href="#catalogo" class="catalog-link-filter" data-category="calzado">Calzado Premium</a>
+                        </li>
+                        <li><a href="#catalogo" class="catalog-link-filter" data-category="ropa">Ropa Deportiva</a></li>
+                        <li><a href="#catalogo" class="catalog-link-filter" data-category="equipamiento">Accesorios y
+                                Equipo</a></li>
+                        <li><a href="#catalogo">Novedades</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h3>Seguridad y Legal</h3>
+                    <ul>
+                        <li><a href="#" id="btn-privacidad-footer">Política de Privacidad</a></li>
+                        <li><a href="#" id="btn-cookies-footer">Política de Cookies</a></li>
+                        <li><a href="#" id="btn-justificacion-footer">Justificación del Sitio</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Atención a Clientes</h3>
+                    <p>📧 soporte@aerosport.com</p>
+                    <p>📞 800 2376 7767 (AERO-SPORT)</p>
+                    <p>📍 Av. Universidad 1200, Ciudad de México, CP 03330</p>
+                    <div class="payment-methods">
+                        <!-- Tiny visual credit card SVGs representing secure payments -->
+                        <span class="payment-badge" title="Visa">
+                            <svg viewBox="0 0 24 15" width="30" height="20" fill="currentColor">
+                                <rect width="24" height="15" rx="2" fill="#1A1F71" />
+                                <path
+                                    d="M4 11l.8-4.5h1.2L5.2 11H4zm4.5 0L8.2 6.5h1.1l.6 3.5.7-3.5h1.1L10 11H8.5zm5.5-2.2l.6-2.3h1.2l-.7 2.3c-.2.5-.5.7-.9.7h-.8V8.8zm3.2 2.2l1.1-4.5H24L23.2 11h-1.1z"
+                                    fill="#FFF" />
+                            </svg>
+                        </span>
+                        <span class="payment-badge" title="Mastercard">
+                            <svg viewBox="0 0 24 15" width="30" height="20">
+                                <rect width="24" height="15" rx="2" fill="#0A0A0A" />
+                                <circle cx="10" cy="7.5" r="5" fill="#EB001B" />
+                                <circle cx="14" cy="7.5" r="5" fill="#F79E1B" fill-opacity="0.8" />
+                            </svg>
+                        </span>
+                        <span class="payment-badge" title="American Express">
+                            <svg viewBox="0 0 24 15" width="30" height="20" fill="currentColor">
+                                <rect width="24" height="15" rx="2" fill="#0070d2" />
+                                <path d="M3 11l2-7h2.5L9.5 11H7.5l-.5-2H4.5l-.5 2H3.1zm12.5 0V4H17v7h-1.5z"
+                                    fill="#FFF" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AeroSport. Todos los derechos reservados. Diseñado bajo estándares de protección de datos
+                    personales.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
